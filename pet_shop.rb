@@ -29,7 +29,7 @@ def pets_by_breed(pet_shop, check_breed)
   pets_of_same_breed = []
   for pet in pet_shop[:pets]
     if check_breed == pet[:breed]
-      pets_of_same_breed.push(pet[:breed])
+      pets_of_same_breed.push(pet)
     end
   end
   return pets_of_same_breed
